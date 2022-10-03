@@ -7,11 +7,14 @@
     <meta name="viewport" content=
         "width=device-width, initial-scale=1.0">
     <title>
-        Build a Survey Form using HTML and CSS
+        Part 1 | General Info
     </title>
 
     <!-- Styling sheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- icon at the top -->
+    <link rel="icon" href="../Online Questionnaire/icons/Coat_of_arms_of_South_Africa.svg.png">
  
 
 </head>
@@ -141,7 +144,7 @@
                    name="inp">Individual (Sole owner)</input></label>
         <label for="inp-2">
             <input type="checkbox"
-                   name="inp">Patnership</input></label>
+                   name="inp">Partnership</input></label>
         <label for="inp-3">
             <input type="checkbox"
                    name="inp">Public Company (Ltd)</input></label>
@@ -162,7 +165,7 @@
                    name="inp">State-owned Enterprise</input></label>
         <label for="inp-9">
             <input type="checkbox"
-                   name="inp">Non-profit institution/Company/Organisation</input></label>
+                   name="inp">Non-profit institution/Company/Organization</input></label>
         <label for="inp-10">
             <input type="checkbox"
                    name="inp">Joint Venture</input></label>
@@ -176,11 +179,11 @@
 
         <div class="parag">
             <p class="def">Definition<br>
-                The <b>main activity</b> of the enterprise is the activity from which the largest part of its income derived
+                <span class = 'main-def'>Main activity of the enterprise is the activity from which the largest part of its income derived.</span> 
             </p>
         </div>
 
-        <div class="table">
+        <div class="table" style="overflow-x:auto;">
             <table>
                 <tr>
                   <th>Type of activity</th>
@@ -199,7 +202,7 @@
                       placeholder="e.g cattle, game, eggs, bees" /> </td>
                 </tr>
                 <tr>
-                  <td class="table-data">Agriculture and animals husbandry services <em>Please do not include vertinary</em> </td>
+                  <td class="table-data">Agriculture and animals husbandry services <em>Please do not include veterinary</em> </td>
                   <td><input type="text"
                     id="name"
                     placeholder="e.g aerial seeding, spraying, artificial insemination" /> </td>
@@ -211,7 +214,7 @@
                     placeholder="e.g culling of game" /> </td>
                 </tr>
                 <tr>
-                  <td class="table-data">Production of organic fertiliser</td>
+                  <td class="table-data">Production of organic fertilizer</td>
                   <td><input type="text"
                     id="name"
                     placeholder="e.g compost, animal manure" /> </td>
@@ -220,73 +223,17 @@
                   <td class="table-data">Production of seed</td>
                   <td><input type="text"
                     id="name"
-                    placeholder="e.g maize, vegetable seed, cotton seed" /> </td>
+                    placeholder="e.g maize seed, vegetable seed, cotton seed" /> </td>
                 </tr>
               </table>
         </div>
 
-        <div id="wrapper">
-            <table id="keywords" cellspacing="0" cellpadding="0">
-              <thead>
-                <tr>
-                  <th><span>Keywords</span></th>
-                  <th><span>Impressions</span></th>
-                  <th><span>Clicks</span></th>
-                  <th><span>CTR</span></th>
-                  <th><span>Rank</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="lalign">silly tshirts</td>
-                  <td>6,000</td>
-                  <td>110</td>
-                  <td>1.8%</td>
-                  <td>22.2</td>
-                </tr>
-                <tr>
-                  <td class="lalign">desktop workspace photos</td>
-                  <td>2,200</td>
-                  <td>500</td>
-                  <td>22%</td>
-                  <td>8.9</td>
-                </tr>
-                <tr>
-                  <td class="lalign">arrested development quotes</td>
-                  <td>13,500</td>
-                  <td>900</td>
-                  <td>6.7%</td>
-                  <td>12.0</td>
-                </tr>
-                <tr>
-                  <td class="lalign">popular web series</td>
-                  <td>8,700</td>
-                  <td>350</td>
-                  <td>4%</td>
-                  <td>7.0</td>
-                </tr>
-                <tr>
-                  <td class="lalign">2013 webapps</td>
-                  <td>9,900</td>
-                  <td>460</td>
-                  <td>4.6%</td>
-                  <td>11.5</td>
-                </tr>
-                <tr>
-                  <td class="lalign">ring bananaphone</td>
-                  <td>10,500</td>
-                  <td>748</td>
-                  <td>7.1%</td>
-                  <td>17.3</td>
-                </tr>
-              </tbody>
-            </table>
-           </div>
-
+        <div class="next-button">
         <!-- Multi-line Text Input Control -->
         <button type="submit" value="next">
             Next
         </button>
+        </div>
     </form>
 </body>
   
