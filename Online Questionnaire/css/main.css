@@ -1,5 +1,7 @@
  /* Styling the Body element i.e. Color,
         Font, Alignment */
+        /* /////////////////////////////////////////////////
+         */
         @font-face {
           font-family: JosefinSans-Bold;
           src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
@@ -9,6 +11,17 @@
           src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
         }
 
+        @font-face {
+          font-family: Ubuntu-Regular;
+          src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+        }
+        @font-face {
+          font-family: Ubuntu-Med;
+          src: url('../fonts/ubuntu/Ubuntu-Medium.ttf');
+        }
+        /*////////////////////////////////////////////////////// 
+         */
+
         h1{
           font-family: JosefinSans-Bold;
         }
@@ -17,7 +30,14 @@
           background-color: #50B848;
           font-family: Ubuntu-Bold;
           text-align: center;
-      }
+        }
+        td{
+          font-family: Ubuntu-Regular;
+        }
+
+        input#name, input#age, label, select#role{
+          font-family: Ubuntu-Med;
+        }
 
       /* Styling the Form (Color, Padding, Shadow) */
       form {
