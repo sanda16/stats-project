@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <!-- Styling sheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+ 
+
+</head>
+  
+<body>
+    <h1>Part 1 — General Information</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+    <p><b>1. Registration and location of the enterprise</b></p>
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Registered/Legal Name
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="text"
+        id="name"
+        placeholder="Enter your Registered Company Name" required/>
+            
+        </div>
+  
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Trading Name
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="text"
+        id="name"
+        placeholder="Enter your Trading Company Name" required/>
+            
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Company Registration Number
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="number"
+        id="name"
+        placeholder="Enter your Registered Company Number" required/>
+            
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Income Tax Number
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="number"
+        id="name"
+        placeholder="Enter your Income Tax Number" required/>
+            
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                VAT Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="age"
+                   placeholder="Enter your VAT Number" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Choose your settlement
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="Village">Village</option>
+                <option value="Town">Town</option>
+                <option value="City">City</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Farm/Street Name
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="text"
+        id="name"
+        placeholder="Enter your Farm Or Street Name" />
+            
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Farm/Street Number
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="text"
+        id="name"
+        placeholder="Enter your Farm Or Street Number" />
+            
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Physical Address Code
+            </label>
+ 
+            <!-- Input Type Text -->
+        <input type="text"
+        id="name"
+        placeholder="Enter your Physical Address Code or Postal Code" /> <br>
+
+    <p></p>
+
+    <div class="form-control">
+        <label><b>2. Please indicate the type of ownership. This enterprise is owned by: </b>
+            <small>(Clicking on the appropriate box)</small>
+        </label>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="inp">Individual (Sole owner)</input></label>
+        <label for="inp-2">
+            <input type="checkbox"
+                   name="inp">Patnership</input></label>
+        <label for="inp-3">
+            <input type="checkbox"
+                   name="inp">Public Company (Ltd)</input></label>
+        <label for="inp-4">
+            <input type="checkbox"
+                   name="inp">Private Company (Pty Ltd)</input></label>
+        <label for="inp-5">
+            <input type="checkbox"
+                   name="inp">Public Corporation</input></label>
+        <label for="inp-6">
+            <input type="checkbox"
+                   name="inp">Close Corporation (CC)</input></label>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">Cooperative Society</input></label>
+        <label for="inp-8">
+            <input type="checkbox"
+                   name="inp">State-owned Enterprise</input></label>
+        <label for="inp-9">
+            <input type="checkbox"
+                   name="inp">Non-profit institution/Company/Organisation</input></label>
+        <label for="inp-10">
+            <input type="checkbox"
+                   name="inp">Joint Venture</input></label>
+        <label for="inp-11">
+            <input type="checkbox"
+                   name="inp">Trust</input></label>
+        <label for="inp-12">
+            <input type="checkbox"
+                   name="inp">Other</input></label> <br>
+        <p><b>4. Indicate the main activity, as well as any secondary activity/activities from which the enterprise derives its income during the report period.</b></p><br>
+
+        <div class="parag">
+            <p class="def">Definition<br>
+                The <b>main activity</b> of the enterprise is the activity from which the largest part of its income derived
+            </p>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                  <th>Type of activity</th>
+                  <th>Specify the products</th>
+                </tr>
+                <tr>
+                  <td class="table-data">Growing of fields; market gardening; horticulture</td>
+                  <td><input type="text"
+                    id="name"
+                    placeholder="e.g maize, potatoes" /> </td>
+                </tr>
+                <tr>
+                    <td class="table-data">Farming of animals</td>
+                    <td><input type="text"
+                      id="name"
+                      placeholder="e.g cattle, game, eggs, bees" /> </td>
+                </tr>
+                <tr>
+                  <td class="table-data">Agriculture and animals husbandry services <em>Please do not include vertinary</em> </td>
+                  <td><input type="text"
+                    id="name"
+                    placeholder="e.g aerial seeding, spraying, artificial insemination" /> </td>
+                </tr>
+                <tr>
+                  <td class="table-data">Hunting; trapping and game propagation, including related services</td>
+                  <td><input type="text"
+                    id="name"
+                    placeholder="e.g culling of game" /> </td>
+                </tr>
+                <tr>
+                  <td class="table-data">Production of organic fertiliser</td>
+                  <td><input type="text"
+                    id="name"
+                    placeholder="e.g compost, animal manure" /> </td>
+                </tr>
+                <tr>
+                  <td class="table-data">Production of seed</td>
+                  <td><input type="text"
+                    id="name"
+                    placeholder="e.g maize, vegetable seed, cotton seed" /> </td>
+                </tr>
+              </table>
+        </div>
+
+        <div id="wrapper">
+            <table id="keywords" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th><span>Keywords</span></th>
+                  <th><span>Impressions</span></th>
+                  <th><span>Clicks</span></th>
+                  <th><span>CTR</span></th>
+                  <th><span>Rank</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="lalign">silly tshirts</td>
+                  <td>6,000</td>
+                  <td>110</td>
+                  <td>1.8%</td>
+                  <td>22.2</td>
+                </tr>
+                <tr>
+                  <td class="lalign">desktop workspace photos</td>
+                  <td>2,200</td>
+                  <td>500</td>
+                  <td>22%</td>
+                  <td>8.9</td>
+                </tr>
+                <tr>
+                  <td class="lalign">arrested development quotes</td>
+                  <td>13,500</td>
+                  <td>900</td>
+                  <td>6.7%</td>
+                  <td>12.0</td>
+                </tr>
+                <tr>
+                  <td class="lalign">popular web series</td>
+                  <td>8,700</td>
+                  <td>350</td>
+                  <td>4%</td>
+                  <td>7.0</td>
+                </tr>
+                <tr>
+                  <td class="lalign">2013 webapps</td>
+                  <td>9,900</td>
+                  <td>460</td>
+                  <td>4.6%</td>
+                  <td>11.5</td>
+                </tr>
+                <tr>
+                  <td class="lalign">ring bananaphone</td>
+                  <td>10,500</td>
+                  <td>748</td>
+                  <td>7.1%</td>
+                  <td>17.3</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="next">
+            Next
+        </button>
+    </form>
+</body>
+  
+</html>
