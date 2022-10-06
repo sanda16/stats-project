@@ -1,0 +1,136 @@
+ /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        /* /////////////////////////////////////////////////
+         */
+        @font-face {
+          font-family: JosefinSans-Bold;
+          src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
+        }
+        @font-face {
+          font-family: Ubuntu-Bold;
+          src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+        }
+
+        @font-face {
+          font-family: Ubuntu-Regular;
+          src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+        }
+        @font-face {
+          font-family: Ubuntu-Med;
+          src: url('../fonts/ubuntu/Ubuntu-Medium.ttf');
+        }
+        /*////////////////////////////////////////////////////// 
+         */
+
+        h1{
+          font-family: JosefinSans-Bold;
+        }
+
+        body {
+          background-color: #50B848;
+          font-family: Ubuntu-Bold;
+          text-align: center;
+        }
+        td{
+          font-family: Ubuntu-Regular;
+        }
+
+        input#name, input#age, label, select#role{
+          font-family: Ubuntu-Med;
+        }
+
+      /* Styling the Form (Color, Padding, Shadow) */
+      form {
+          background-color: #fff;
+          max-width: 1000px;
+          margin: 50px auto;
+          padding: 30px 20px;
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+          border-radius: 27px;
+      }
+
+      /* Styling form-control Class */
+      .form-control {
+          text-align: left;
+          margin-bottom: 25px;
+      }
+
+      /* Styling form-control Label */
+      .form-control label {
+          display: block;
+          margin-bottom: 10px;
+      }
+
+      /* Styling form-control input,
+      select, textarea */
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+          border: 1px solid #777;
+          border-radius: 2px;
+          font-family: Ubuntu-Bold;
+          padding: 10px;
+          display: block;
+          width: 95%;
+      }
+
+      /* Styling form-control Radio
+      button and Checkbox */
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+          display: inline-block;
+          width: auto;
+      }
+
+      /* Styling Button */
+      button {
+          background-color: #50B848;
+          border: 1px solid #777;
+          border-radius: 2px;
+          font-family: Ubuntu-Bold;
+          font-size: 21px;
+          display: block;
+          width: 50%;
+          margin-top: 50px;
+          margin-bottom: 20px;
+          align-content: center;
+          margin: 0 auto !important;
+          display: block !important;
+          margin-top: 10px;
+      }
+
+      table {
+        font-family: Ubuntu-Bold;
+      }
+      
+      table thead {
+        position: sticky;
+        top: 0;
+      }
+      
+      table thead th {
+        border: 1px solid #e4eff8;
+        background: white;
+        cursor: pointer;
+      }
+      
+      input{
+        width: 3px;
+      }
+
+      table thead th{
+        cursor: pointer;
+        background: linear-gradient(0deg, #e4eff8, #4578a2 5%, #e4eff8 150%);
+        color: white;
+        border: 1px solid white;
+      }
+      
+      table th,
+      table td {
+        padding: 0.2rem 0.5rem;
+        text-align: left;
+      }
+      
+      table input {
+        width: 100%;
+      }

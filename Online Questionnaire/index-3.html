@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Part 3 | Income items
+    </title>
+
+    <!-- Styling sheet -->
+    <link rel="stylesheet" type="text/css" href="../Online Questionnaire/css/main.css">
+ 
+
+</head>
+
+<style>
+    .styled-table {
+    border-collapse: collapse !important;
+    margin: 25px 0 !important;
+    font-size: 0.9em !important;
+    font-family: sans-serif !important;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.styled-table thead tr {
+    background-color: #009879 !important;
+    color: #ffffff !important;
+    text-align: left !important;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px !important;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd !important;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3 !important;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879 !important;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold !important;
+    color: #009879 !important;
+}
+</style>
+
+<body>
+    <h1>Part 3 — Income items</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+        <!-- Details -->
+        <h2>Sum of the income</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Income items</th>
+                    <th>Income (Rands)</th>
+                    <th>Income Percent</th>
+                    <th>For Office Only</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total income received from sales of crops<br>
+                        animals, animal products, horticulture products,<br>
+                        other agricultural products and other sales <br>(The sum of the following questions -- Question 7.1, to Question 7.7)
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number" placeholder="e.g. 100%"></td>
+                    <td><input type="number" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Part 3A - Sales of field crops</h2>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Field crops</th>
+                    <th>Income (Rands)</th>
+                    <th>Income Percent (%)</th>
+                    <th>For Office Only</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Total income received from field crops <br>
+                        (sum of Question 7.1.1 to 7.1.8)</strong>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number" placeholder="e.g. 100%" readonly></td>
+                    <td>TOTAL 07.1</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.1</b> Maize
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01120 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.2</b> Wheat
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01110 001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.3</b> Sugarcane
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01802 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.4</b> Sunflower
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01445 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.5</b> Canola
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01449 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.6</b> Ground-nuts (peanuts)
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01429 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.8</b> Dry Beans
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01701 0001</td>
+                </tr>
+                <tr>
+                    <td><b>7.1.9</b> Other field crops such as barley, sorghum, cotton-soy beans<br>
+                                    tobacco, chicory, <strong>excluding tree-grown nuts <br>
+                                    (e.g pecans, macadamia, cashew nuts, almonds)</strong>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01100 0000</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Part 3B - Sales of horticulture crops</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Horticulture crops</th>
+                    <th>Income (Rands)</th>
+                    <th>Income Percent (%)</th>
+                    <th>For Office Only</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Total income received from horticulture crops <br>
+                        (sum of Question 7.2.1 to 7.2.7)</strong>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>TOTAL 07.2</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.2.1 Vegetables</b> <br> (sum of question 7.2.1 to question 7.2.1.4)
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><b>01200 0000</b></td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.1 Potatoes
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01510 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.1 Potatoes
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01234 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.2 Tomatoes
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01253 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.3 Onions
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01290 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.3 Other vegetables
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01300 0001</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.2 Fruits, <strong>excluding grapes</strong>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01510 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.3 <strong>Grapes</strong>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01510 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.1 Potatoes
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01510 0000</td>
+                </tr>
+
+                <tr>
+                    <td>7.2.1.1 Potatoes
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td>01510 0000</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="next">
+            Next
+        </button>
+    </form>
+</body>
+  
+</html>
