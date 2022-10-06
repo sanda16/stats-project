@@ -32,7 +32,7 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title"><b>Screening Questionnaire</b></h2>
-                    <form method="POST" id="form1" action="Online Questionnaire\index.html">
+                    <form method="POST" id="form1" action = "../Online Questionnaire/index.html">
                         <div class="input-group">
                             <p>Are you a farmer?</p>
                             <input class = 'input-one' type="radio" name="boolean" id="farmer" value="Yes" required>
@@ -49,15 +49,6 @@
         </div>
     </div>
     <!-- conditional code for change of action -->
-   <script>
-    const act = document.getElementById('form1');
-
-    const input = document.querySelector('input');
-
-    if(input === "Yes"){
-        act.action = "C:\Users\noma\Documents\Ex_Files_JavaScript_EssT\RegForm\index.html"
-    }
-   </script>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
