@@ -800,15 +800,171 @@
                 </tr>
             </tbody>
         </table>
+        <h3>Aquaculture for the financial year ended on any date between 01 July 2020 and 30 June 2021</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Aquaculture</th>
+                    <th>Income (Rands)</th>
+                    <th>Income Percent (%)</th>
+                    <th>Quantity (kg)</th>
+                    <th>For Office Only</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>7.6.1 </b><strong>Aquacultural (fresh water) products (e.g. trout)</strong> <br>
+                        products (sum of Question 7.6.1.1 to 7.6.1.6)
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><strong>04000 0000</strong></td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.1</b> Trout</td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04000 0001</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.2</b> Tilapia/bream</td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04000 0002</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.3</b> Catfish</td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04000 0003</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.4</b> Carp and koi carp</td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04000 0004</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.5</b> Marron crayfish</td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04000 0005</td>
+                </tr>
+
+                <tr>
+                    <td><b>7.6.1.6</b> Other freshwater fish <br> <strong><em>Please Specify below</em></strong></td>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                    <td><input type="number"></td> 
+                    <td>04900 0000</td>
+                </tr>
+            </tbody>
+        </table>
+        <strong>Specify the nature of the two largest items included in <em>"Other freshwater fish in 7.6.1.6"</em></strong> <br> <br>
+        <div class="form-control">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Description of Other freshwater fish</th>
+                        <th>Income (Rands)</th>
+                        <th>Income Percent (%)</th>
+                        <th>Quantity (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="name"/></td>
+                        <td><input type="number" id="name"></td>
+                        <td><input type="number" id="name"></td>
+                        <td><input type="number" id="name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" id="name"/></td>
+                        <td><input type="number" id="name"></td>
+                        <td><input type="number" id="name"></td>
+                        <td><input type="number" id="name"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+            <div class="form-control">
+                <label><b>7.6.2</b> <strong>What type of fish farming, including hatcheries (aquaculture) system is used?</strong>
+                    <small>(Please click on the appropriate box)</small>
+                </label>
+                <!-- Input Type Checkbox -->
+                <label for="inp-1">
+                    <input type="checkbox"
+                           name="inp">Pond culture</input></label>
+                <label for="inp-2">
+                    <input type="checkbox"
+                           name="inp">Cages</input></label>
+                <label for="inp-3">
+                    <input type="checkbox"
+                           name="inp">Aquaponic</input></label>
+                <label for="inp-4">
+                    <input type="checkbox"
+                           name="inp">Recirculating aquaculture system (part time/full time)</input></label>
+                <label for="inp-5">
+                    <input type="checkbox"
+                           name="inp">Flow-through systems</input></label>
+                <label for="inp-6">
+                    <input type="checkbox"
+                           name="inp">Raceways</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                           name="inp">Ranching</input></label>
+                <label for="inp-8">
+                    <input type="checkbox"
+                           name="inp">Long line</input></label>
+                <label for="inp-9">
+                    <input type="checkbox"
+                           name="inp">Raft</label>
+                <label for="inp-10">
+                    <input type="checkbox"
+                           name="inp">Rack</input></label>
+                <div>
+                    <label for="other">
+                    <input type="checkbox" id="other" name="interest" value="other" />Other <b>(please click and specify)</b></label>
+                    <input type="text" id="otherValue" name="other" />
+                </div>
+            </div>
 
 
-
-        
         <!-- Multi-line Text Input Control -->
         <button type="submit" value="next">
             Next
         </button>
     </form>
 </body>
+
+<!-- script for other button -->
+
+<script>
+    const otherCheckbox = document.querySelector('#other');
+const otherText = document.querySelector('#otherValue');
+otherText.style.visibility = 'hidden';
+
+otherCheckbox.addEventListener('change', () => {
+  if (otherCheckbox.checked) {
+    otherText.style.visibility = 'visible';
+    otherText.value = '';
+  } else {
+    otherText.style.visibility = 'hidden';
+  }
+});
+</script>
   
 </html>

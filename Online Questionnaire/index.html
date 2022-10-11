@@ -172,9 +172,11 @@
         <label for="inp-11">
             <input type="checkbox"
                    name="inp">Trust</input></label>
-        <label for="inp-12">
-            <input type="checkbox"
-                   name="inp">Other</input></label> <br>
+        <div>
+            <label for="other">
+            <input type="checkbox" id="other" name="interest" value="other" />Other <b>(please click and specify)</b></label>
+            <input type="text" id="otherValue" name="other" />
+         </div> <br>
         <p><b>4. Indicate the main activity, as well as any secondary activity/activities from which the enterprise derives its income during the report period.</b></p><br>
 
         <div class="parag">
@@ -236,5 +238,20 @@
         </div>
     </form>
 </body>
+
+<script>
+    const otherCheckbox = document.querySelector('#other');
+    const otherText = document.querySelector('#otherValue');
+    otherText.style.visibility = 'hidden';
+
+    otherCheckbox.addEventListener('change', () => {
+    if (otherCheckbox.checked) {
+        otherText.style.visibility = 'visible';
+        otherText.value = '';
+    } else {
+        otherText.style.visibility = 'hidden';
+    }
+    });
+</script>
   
 </html>
