@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Part 4 | Inventory
+    </title>
+
+    <!-- Styling sheet -->
+    <link rel="stylesheet" type="text/css" href="../Online Questionnaire/css/main.css">
+ 
+
+</head>
+
+<style>
+            .styled-table {
+            border-collapse: collapse !important;
+            margin: 25px 0 !important;
+            font-size: 0.9em !important;
+            font-family: sans-serif !important;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .styled-table thead tr {
+            background-color: #009879 !important;
+            color: #ffffff !important;
+            text-align: left !important;
+        }
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px !important;
+        }
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd !important;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3 !important;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879 !important;
+        }
+        .styled-table tbody tr.active-row {
+            font-weight: bold !important;
+            color: #009879 !important;
+        }
+        
+</style>
+<p><b>Part 4 - Inventory</b></p>
+<!-- Create Form -->
+<form id="form" method="post">
+    
+        <!-- Details -->
+        <p style="align-content: left; font-size: large;">Opening value</p>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                25. <strong>Total opening values</strong> (sum of Question 25.1 to Question 25.4)
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="number" placeholder="Rand"/>
+        </div>
