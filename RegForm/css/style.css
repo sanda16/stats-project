@@ -1,3 +1,33 @@
+/* Fonts */
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+  }
+  
+  @font-face {
+	font-family: Ubuntu-Bold;
+	src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+  }
+  
+  @font-face {
+	font-family: JosefinSans-Bold;
+	src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); 
+  }
+
+h2 {
+	font-family: JosefinSans-Bold;
+}
+
+label, p.enter-num, span, b, label.container, input.register, input.account,
+p.OTP {
+	
+	font-family: Ubuntu-Bold;
+}
+
+p{
+	font-family: Ubuntu-Regular;
+}
+
 body {
 	margin:  0;
 }
