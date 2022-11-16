@@ -59,6 +59,16 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
 
+    <script>
+        var form = document.getElementById("form")
+        form.addEventListener("submit", showMessage)
+
+        function showMessage(event){
+            alert("If your answer is no, please do not continue!")
+        }
+        event.preventDefault()
+    </script>
+
 </body>
 
 </html>

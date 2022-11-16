@@ -23,7 +23,7 @@
     <h1>Part 1 — General Information</h1>
   
     <!-- Create Form -->
-    <form id="form" method="post" action="./index-2.html" data-netlify="true">
+    <form id="form" method="post" action="/Online Questionnaire/index-2.html" data-netlify="true">
     <p><b>1. Registration and location of the enterprise</b></p>
         <!-- Details -->
         <div class="form-control">
@@ -58,7 +58,7 @@
             <!-- Input Type Text -->
         <input type="number"
         id="name"
-        placeholder="Enter your Registered Company Number" required/>
+        placeholder="Enter your Registered Company Number" maxlength="8" required/>
             
         </div>
 
@@ -70,7 +70,7 @@
             <!-- Input Type Text -->
         <input type="number"
         id="name"
-        placeholder="Enter your Income Tax Number" required/>
+        placeholder="Enter your Income Tax Number" pattern="[1-9]{1}[0-9]{9}" required/>
             
         </div>
   
@@ -82,7 +82,7 @@
             <!-- Input Type Text -->
             <input type="number"
                    id="age"
-                   placeholder="Enter your VAT Number" />
+                   placeholder="Enter your VAT Number" maxlength="10" pattern="\d{10}" required/>
         </div>
   
         <div class="form-control">
@@ -106,7 +106,7 @@
             <!-- Input Type Text -->
         <input type="text"
         id="name"
-        placeholder="Enter your Farm Or Street Name" />
+        placeholder="Enter your Farm Or Street Name" required/>
             
         </div>
 
@@ -118,7 +118,7 @@
             <!-- Input Type Text -->
         <input type="text"
         id="name"
-        placeholder="Enter your Farm Or Street Number" />
+        placeholder="Enter your Farm Or Street Number" required/>
             
         </div>
 
@@ -130,7 +130,7 @@
             <!-- Input Type Text -->
         <input type="text"
         id="name"
-        placeholder="Enter your Physical Address Code or Postal Code" /> <br>
+        placeholder="Enter your Physical Address Code or Postal Code" required/> <br>
 
     <p></p>
 
