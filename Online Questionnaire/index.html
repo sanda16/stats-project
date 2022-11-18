@@ -18,6 +18,42 @@
  
 
 </head>
+
+<style>
+    .styled-table {
+    border-collapse: collapse !important;
+    margin: 25px 0 !important;
+    font-size: 0.9em !important;
+    font-family: sans-serif !important;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.styled-table thead tr {
+    background-color: #009879 !important;
+    color: #ffffff !important;
+    text-align: left !important;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px !important;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd !important;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3 !important;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879 !important;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold !important;
+    color: #009879 !important;
+}
+</style>
   
 <body>
     <h1>Part 1 — General Information</h1>
@@ -185,48 +221,53 @@
             </p>
         </div>
 
-        <div class="table" style="overflow-x:auto;">
+        <div class="styled-table" style="overflow-x:auto;">
             <table>
-                <tr>
-                  <th>Type of activity</th>
-                  <th>Specify the products</th>
-                </tr>
-                <tr>
-                  <td class="table-data">Growing of fields; market gardening; horticulture</td>
-                  <td><input type="text"
-                    id="name"
-                    placeholder="e.g maize, potatoes" /> </td>
-                </tr>
-                <tr>
-                    <td class="table-data">Farming of animals</td>
+                <thead>
+                    <tr>
+                    <th>Type of activity</th>
+                    <th>Specify the products</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td class="table-data">Growing of fields; market gardening; horticulture</td>
                     <td><input type="text"
-                      id="name"
-                      placeholder="e.g cattle, game, eggs, bees" /> </td>
-                </tr>
-                <tr>
-                  <td class="table-data">Agriculture and animals husbandry services <em>Please do not include veterinary</em> </td>
-                  <td><input type="text"
-                    id="name"
-                    placeholder="e.g aerial seeding, spraying, artificial insemination" /> </td>
-                </tr>
-                <tr>
-                  <td class="table-data">Hunting; trapping and game propagation, including related services</td>
-                  <td><input type="text"
-                    id="name"
-                    placeholder="e.g culling of game" /> </td>
-                </tr>
-                <tr>
-                  <td class="table-data">Production of organic fertilizer</td>
-                  <td><input type="text"
-                    id="name"
-                    placeholder="e.g compost, animal manure" /> </td>
-                </tr>
-                <tr>
-                  <td class="table-data">Production of seed</td>
-                  <td><input type="text"
-                    id="name"
-                    placeholder="e.g maize seed, vegetable seed, cotton seed" /> </td>
-                </tr>
+                        id="name"
+                        placeholder="e.g maize, potatoes" /> </td>
+                    </tr>
+                    <tr>
+                        <td class="table-data">Farming of animals</td>
+                        <td><input type="text"
+                        id="name"
+                        placeholder="e.g cattle, game, eggs, bees" /> </td>
+                    </tr>
+                    <tr>
+                    <td class="table-data">Agriculture and animals husbandry services <em>Please do not include veterinary</em> </td>
+                    <td><input type="text"
+                        id="name"
+                        placeholder="e.g aerial seeding, spraying, artificial insemination" /> </td>
+                    </tr>
+                    <tr>
+                    <td class="table-data">Hunting; trapping and game propagation, including related services</td>
+                    <td><input type="text"
+                        id="name"
+                        placeholder="e.g culling of game" /> </td>
+                    </tr>
+                    <tr>
+                    <td class="table-data">Production of organic fertilizer</td>
+                    <td><input type="text"
+                        id="name"
+                        placeholder="e.g compost, animal manure" /> </td>
+                    </tr>
+                    <tr>
+                    <td class="table-data">Production of seed</td>
+                    <td><input type="text"
+                        id="name"
+                        placeholder="e.g maize seed, vegetable seed, cotton seed" /> </td>
+                    </tr>
+                </tbody>
               </table>
         </div>
 
