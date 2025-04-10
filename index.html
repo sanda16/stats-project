@@ -5,9 +5,9 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="author" content="Sanda Nondlozi">  Not necessary!-->
-
-    <!-- Title Page-->
+    <meta name="description" content="Screening Questionnaire for farmers">
+    <meta name="keywords" content="Screening, Questionnaire, Farmers, Agriculture">
+    <meta name="author" content="Sanda Nondlozi">
     <title>Screening Questionnaire</title>
 
     <!-- Icons font CSS-->
@@ -31,15 +31,15 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title"><b>Screening Questionnaire</b></h2>
-                    <form method="POST" id="form1" action = "./RegForm/index.html" data-netlify=true>
+                    <h1 class="title"><b>Screening Questionnaire</b></h1>
+                    <form method="POST" id="form1" action="./RegForm/index.html" data-netlify="true">
                         <div class="input-group">
                             <p>Are you a farmer?</p>
-                            <input class = 'input-one' type="radio" name="boolean" id="farmer" value="Yes" required>
+                            <input class='input-one' type="radio" name="boolean" id="farmer" value="Yes" required>
                             <label class="label1" for="choice1">Yes</label><br>
-                            <input class = 'input-two' type="radio" name="boolean" id="farmer" value = "No" required>
-                            <label class = 'label2' for="choice2" >No</label>
-                        </div>   
+                            <input class='input-two' type="radio" name="boolean" id="farmer" value="No" required>
+                            <label class="label2" for="choice2">No</label>
+                        </div>
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
                         </div>
@@ -60,13 +60,13 @@
     <script src="js/global.js"></script>
 
     <script>
-        var form = document.getElementById("form")
-        form.addEventListener("submit", showMessage)
+        const form = document.getElementById("form1");
+        form.addEventListener("submit", showMessage);
 
-        function showMessage(event){
-            alert("If your answer is no, please do not continue!")
+        function showMessage(event) {
+            alert("If your answer is no, please do not continue!");
         }
-        event.preventDefault()
+        event.preventDefault();
     </script>
 
 </body>
